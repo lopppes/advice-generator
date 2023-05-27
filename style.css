@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+body {
+  background-color: #1f2631;
+  font-family: "Manrope", sans-serif;
+  align-items: center;
+  
+}
+main {
+  position: relative;
+  max-width: 33.75rem;
+  width: 90%;
+  min-width: 10rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.28rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #313a49;
+  border-radius: 10px;
+  padding: 3.2rem 1.5rem;
+  text-align: center;
+  
+}
+.advice{
+  color: #59faac;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 800;
+
+}
+.mensagem {
+  font-size: 1.75rem;
+  color: #c6d5e0;
+  font-weight: 800;
+  padding: 0 1rem;
+
+}
+.linha {
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.6rem;
+  align-items: center;
+  margin: 0 auto;
+
+}
+.linha::before,
+.linha::after {
+  content: " ";
+  background-color: #fff;
+  opacity: 0.2;
+  width: 70%;
+  height: 1px;
+
+}
+.linha-image {
+  background-image: url("imgs/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10rem;
+  height: 2rem;
+
+}
+.dado-img {
+  position: absolute;
+  cursor: pointer;
+  background-color: #59faac;
+  background-image: url("imgs/icon-dice.svg");
+  left: 50%;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: translateY(30%) translateX(-50%);
+  transition: all ease-in-out 0.3s;
+  
+}
+@media (hover: hover) {
+  .dado-img:hover {
+    box-shadow: -1px 1px 70px 12px rgba(82, 255, 168, 1);
+    -webkit-box-shadow: -1px 1px 70px 12px rgba(82, 255, 168, 1);
+    -moz-box-shadow: -1px 1px 70px 12px rgba(82, 255, 168, 1);
+    transition: ease-in-out 0.2.5s;
+  }
+
+}
+@media screen and (min-width: 900px) {
+  main {
+    margin-top: 13.75rem;
+  }
+
+}
